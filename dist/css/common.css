@@ -4,3 +4,7 @@ md-bottom-sheet.md-list md-list-item {    color: rgba(0,0,0,0.87);}md-bottom-she
 .fa-smile:before {
     content: "\f118";
 }
+.ng-binding > a.action{
+	color:#428bca;
+	font-size:12px;
+}
