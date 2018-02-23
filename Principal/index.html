@@ -1,0 +1,1521 @@
+<html class="no-js"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Admin.io - AngularJS theme</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Theme's own CSS file -->
+  <link rel="stylesheet" href="../dist/css/font-awesome.min.css">
+<link rel="stylesheet" href="../dist/css/common.css"> 
+ <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="../dist/css/angular-material.min.css">
+  <link id="app_main_css" rel="stylesheet" href="../dist/css/main.css">
+
+  <!-- Include Jquery in the vendor folder -->
+  <script src="../dist/js/jquery.min.js"></script>
+
+  <!--[if lte IE 9]>
+  <script src="../dist/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/common.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/util.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/stats.js"></script>
+</head>
+<body data-ng-app="app" id="app" data-custom-background="" data-off-canvas-nav="" data-ng-controller="AdminAppCtrl" class="ng-scope">
+
+<div class="page-wrapper nav-style--alternative">
+  <div data-ng-hide="checkIfOwnPage()" class="no-print" aria-hidden="false">
+    <!-- ngInclude: 'app/views/navigation.html' -->
+	<aside id="nav-container" class="ng-scope">
+
+<div id="nav-wrapper" class="md-whiteframe-z2 ng-scope">
+    <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 100%;">
+	<ul id="nav" data-ng-controller="NavCtrl" data-slim-scroll="" data-collapse-nav="" data-highlight-active="" class="ng-scope" style="overflow: hidden; width: auto; height: 100%;">
+        <li class="navigation-profile-picture active">
+          <a href="#/">
+            <img src="../dist/images/user.png" alt="" class="img80_80 img-circle">
+          </a>
+        </li>
+        <li class="active">
+            <a md-ink-ripple="#bbb" href="#/dashboard">
+              <i class="fa fa-users"></i>
+              <span>Teachers</span>
+            <div class="md-ripple-container" style=""></div></a>
+            <ul style="display: none;">
+                <li class="active"><a md-ink-ripple="#bbb" active="" ui-sref="dashboard" href="#/dashboard"><i class="fa fa-circle submenu__icon"></i><span> Dashboard</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" active="" href="./dashboard1.html"><i class="fa fa-circle submenu__icon"></i><span> Dashboard 1</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" active="" ui-sref="dashboard2" href="#/dashboard/dashboard2"><i class="fa fa-circle submenu__icon"></i><span> Dashboard 2</span><div class="md-ripple-container" style=""></div></a></li>
+            </ul>
+        </li>
+        <li>
+            <a md-ink-ripple="#bbb" href="#/ui">
+              <i class="fa fa-university"></i>
+              <span>Classes</span></a>
+            <ul style="">
+                <li><a md-ink-ripple="#bbb" href="./materialdesign.html"><i class="fa fa-circle submenu__icon"></i><span> Material UI</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./buttons.html"><i class="fa fa-circle submenu__icon"></i><span> Buttons</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./cards.html"><i class="fa fa-circle submenu__icon"></i><span> Cards</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./widgets.html"><i class="fa fa-circle submenu__icon"></i><span>Widgets </span><span class="badge badge-success">Trendy</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./grids.html"><i class="fa fa-circle submenu__icon"></i><span> Grids</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./icons.html"><i class="fa fa-circle submenu__icon"></i><span> Icons</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./typography.html"><i class="fa fa-circle submenu__icon"></i><span> Typography</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./components.html"><i class="fa fa-circle submenu__icon"></i><span> Bootstrap UI</span> <span class="badge badge-info">new</span></a></li>
+                <!--<li><a href="#/ui/timeline"><i class="fa fa-circle submenu__icon"></i> Timeline</a></li>-->
+                <li><a md-ink-ripple="#bbb" href="./nestedlists.html"><i class="fa fa-circle submenu__icon"></i><span>Nested Lists</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a md-ink-ripple="#bbb" href="#/pages">
+              <i class="fa fa-star"></i>
+              <span> Events </span></a>
+            <ul style="">
+                <li><a md-ink-ripple="#bbb" href="./signin.html"><i class="fa fa-circle submenu__icon"></i><span> Sign in</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./signup.html"><i class="fa fa-circle submenu__icon"></i><span> Sign up</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./forgot.html"><i class="fa fa-circle submenu__icon"></i><span> Request password</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./profile.html"><i class="fa fa-circle submenu__icon"></i><span> User page</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./404.html"><i class="fa fa-circle submenu__icon"></i><span> 404</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./500.html"><i class="fa fa-circle submenu__icon"></i><span> 500</span></a></li>
+                <li><a md-ink-ripple="#bbb" href="./contact.html"><i class="fa fa-circle submenu__icon"></i><span> Contact</span></a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a md-ink-ripple="#bbb" href="#/table">
+              <i class="fa fa-pencil-square"></i>
+              <span> Forum</span>
+			  <div class="md-ripple-container" style=""></div></a>
+            <ul style="display: none;">
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="tables-static" href="#/tables/static"><i class="fa fa-circle submenu__icon"></i><span> Normal</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="tables-responsive" href="#/tables/responsive"><i class="fa fa-circle submenu__icon"></i><span> Responsive</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="tables-dynamic" href="#/tables/dynamic"><i class="fa fa-circle submenu__icon"></i><span> Dynamic</span><div class="md-ripple-container" style=""></div></a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a md-ink-ripple="#bbb" href="#/form">
+              <i class="fa fa-money"></i>
+              <span>Finance</span>
+			  <div class="md-ripple-container" style=""></div></a>
+            <ul style="display: none;">
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="form-elements" href="#/forms/elements"><i class="fa fa-circle submenu__icon"></i><span> Form elements</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="form-validation" href="#/forms/validation"><i class="fa fa-circle submenu__icon"></i><span> Form validations</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="form-wizard" href="#/forms/wizard"><i class="fa fa-circle submenu__icon"></i><span>Form wizard</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" ui-sref="form-layouts" href="#/forms/layouts"><i class="fa fa-circle submenu__icon"></i><span> Form layouts</span><div class="md-ripple-container" style=""></div></a></li>
+            </ul>
+        </li>
+       <li class="">
+            <a md-ink-ripple="#bbb" href="#/charts">
+              <i class="fa fa-male"></i>
+              <span> Non Teaching</span><div class="md-ripple-container" style=""></div></a>
+            <ul style="display: none;">
+                <li class=""><a md-ink-ripple="#bbb" href="./morrischart.html"><i class="fa fa-circle submenu__icon"></i><span>Morris Charts</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" href="./chartjs.html"><i class="fa fa-circle submenu__icon"></i><span>Chart js</span><div class="md-ripple-container" style=""></div></a></li>
+                <li class=""><a md-ink-ripple="#bbb" href="./flot.html"><i class="fa fa-circle submenu__icon"></i><span>Flot Charts</span><div class="md-ripple-container" style=""></div></a></li>
+                <li><a md-ink-ripple="#bbb" href="./otherchart.html"><i class="fa fa-circle submenu__icon"></i><span>Other Charts</span></a></li>
+            </ul>
+        </li>
+        <li>
+            <a md-ink-ripple="#bbb" href="#/maps">
+              <md-icon class="ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"></path></svg></md-icon>
+              <span> Maps</span></a>
+            <ul style="">
+                <li><a md-ink-ripple="#bbb" ui-sref="gmap" href="#/maps/gmap"><i class="fa fa-circle submenu__icon"></i><span> Google</span></a></li>
+                <li><a md-ink-ripple="#bbb" ui-sref="jqvmap" href="#/maps/jqvmap"><i class="fa fa-circle submenu__icon"></i><span> Vector</span></a></li>
+            </ul>
+        </li>
+        <li class="nav-task">
+            <a md-ink-ripple="#bbb" ui-sref="tasks" href="#/tasks">
+              <md-icon class="ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M18 7l-1.41-1.41-6.34 6.34 1.41 1.41L18 7zm4.24-1.41L11.66 16.17 7.48 12l-1.41 1.41L11.66 19l12-12-1.42-1.41zM.41 13.41L6 19l1.41-1.41L1.83 12 .41 13.41z"></path></svg></md-icon>
+                <span> Tasks</span>
+                <span class="badge badge-danger main-badge ng-binding">5</span>
+            </a>
+        </li>
+        <!--<li class="nav-footer">
+            <div class="nav-footer__footer-info" data-ng-controller="chartingCtrl">
+
+                <div class="list-separator">
+
+                </div>
+
+                <div class="pull-left">
+                    <div easypiechart options="easypiesmall1.options" percent="easypiesmall1.percent" class="easypiechartsmall">
+                                    <span class="pie-percent">
+                                        <md-icon class="" md-svg-src="../dist/img/icons/ic_bluetooth_connected_24px.svg"></md-icon>
+                                    </span>
+                    </div>
+                </div>
+                <div class="right-info">
+                    <p class="">Bluetooth connectivity</p>
+                </div>
+
+            </div>
+        </li>-->
+    </ul>
+	
+	<div class="slimScrollBar" style="background: rgb(0, 0, 0); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 131.935px;"></div>
+	<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+	</div>
+
+</div></aside>
+  </div>
+
+  <div class="view-container">
+
+    <div data-ng-hide="checkIfOwnPage()" class="no-print" aria-hidden="false">
+      <section id="header" class="top-header ng-scope"><!-- Logo -->
+<div class="logo ng-scope" data-ng-controller="AdminAppCtrl">
+    <a class="logo-link" href="#/">
+      <md-icon class="ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M13.5.67s.74 2.65.74 4.8c0 2.06-1.35 3.73-3.41 3.73-2.07 0-3.63-1.67-3.63-3.73l.03-.36C5.21 7.51 4 10.62 4 14c0 4.42 3.58 8 8 8s8-3.58 8-8C20 8.61 17.41 3.8 13.5.67zM11.71 19c-1.78 0-3.22-1.4-3.22-3.14 0-1.62 1.05-2.76 2.81-3.12 1.77-.36 3.6-1.21 4.62-2.58.39 1.29.59 2.65.59 4.04 0 2.65-2.15 4.8-4.8 4.8z"></path></svg></md-icon>
+        <!--<span>{{info.theme_name}}</span>-->
+    </a>
+    <div class="form-group logo-search">
+        <div>
+            <input type="text" class="form-control" placeholder="Search site">
+            <span class="icon glyphicon glyphicon-search"></span>
+        </div>
+    </div>
+</div>
+<header class="clearfix md-whiteframe-z1 ng-scope">
+
+<div class="top-nav">
+<ul class="nav-left list-unstyled">
+    <li>
+        <!-- needs to be put after logo to make it working-->
+        <div class="menu-button" toggle-off-canvas="">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </div>
+
+    </li>
+    <li>
+        <a md-ink-ripple="#bbb" href="#/" data-toggle-min-nav="" class="toggle-min"><i class="fa fa-list color-white"></i><div class="md-ripple-container" style=""></div></a>
+    </li>
+
+
+</ul>
+
+<ul class="nav-left pull-left list-unstyled list-notifications">
+    <li class="dropdown list-notifications__item">
+        <a md-ink-ripple="#8C8C8C" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-label="Messages">
+           <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M22 5.7l-4.6-3.9-1.3 1.5 4.6 3.9L22 5.7zM7.9 3.4L6.6 1.9 2 5.7l1.3 1.5 4.6-3.8zM12.5 8H11v6l4.7 2.9.8-1.2-4-2.4V8zM12 4c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm0 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"></path></svg></md-icon>
+          
+        </a>
+
+        <div class="dropdown-menu pull-left with-arrow panel panel-default">
+            <div class="panel-heading">
+                You have 2 messages.
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                        <span class="pull-left media-icon">
+                            <span class="circle-icon sm bg-info">
+                              <!--<i class="fa fa-comment-o"></i>-->
+                              <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path></svg></md-icon>
+                            </span>
+                        </span>
+
+                        <div class="media-body">
+                            <span class="block">Jane sent you a message</span>
+                            <span class="text-muted">3 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-danger">
+                                          <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18zM18 14H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Lynda sent you a mail</span>
+                            <span class="text-muted">9 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="panel-footer">
+                <a href="javascript:;">Show all messages.</a>
+            </div>
+        </div>
+    </li>
+    <li class="dropdown list-notifications__item">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-label="Mails">
+          <md-icon md-ink-ripple="#8C8C8C" s="" class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></md-icon>
+          
+        </a>
+
+        <div class="dropdown-menu pull-left with-arrow panel panel-default">
+            <div class="panel-heading">
+                You have 3 mails.
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-warning">
+                                          <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Lisa sent you a mail</span>
+                            <span class="text-muted block">2min ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-info">
+                                          <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Jane sent you a mail</span>
+                            <span class="text-muted">3 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-success">
+                                          <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Lynda sent you a mail</span>
+                            <span class="text-muted">9 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="panel-footer">
+                <a href="javascript:;">Show all mails.</a>
+            </div>
+        </div>
+    </li>
+    <li class="dropdown list-notifications__item">
+        <a md-ink-ripple="#8C8C8C" href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" aria-label="Notifications">
+          <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M23 44c2.21 0 4-1.79 4-4h-8c0 2.21 1.79 4 4 4zm13-23c0-6.15-4.27-11.28-10-12.64V7c0-1.66-1.34-3-3-3s-3 1.34-3 3v1.36c-1.02.24-1.98.64-2.89 1.11L36 28.36V21zm-.54 17l4 4L42 39.45 8.55 6 6 8.55l5.84 5.84C10.68 16.32 10 18.58 10 21v11l-4 4v2h29.46z"></path></svg></md-icon>
+          
+        </a>
+
+        <div class="dropdown-menu pull-left with-arrow panel panel-default">
+            <div class="panel-heading">
+                You have 3 notifications.
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-success">
+                                          <md-icon class="colo-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M38 6h-8.37c-.82-2.32-3.02-4-5.63-4s-4.81 1.68-5.63 4H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM24 6c1.1 0 2 .89 2 2s-.9 2-2 2-2-.89-2-2 .9-2 2-2zm4 28H14v-4h14v4zm6-8H14v-4h20v4zm0-8H14v-4h20v4z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">New tasks needs to be done</span>
+                            <span class="text-muted block">2min ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-info">
+                                          <md-icon class="colo-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M24 34c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm12-18h-2v-4c0-5.52-4.48-10-10-10S14 6.48 14 12h3.8c0-3.42 2.78-6.2 6.2-6.2 3.42 0 6.2 2.78 6.2 6.2v4H12c-2.21 0-4 1.79-4 4v20c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V20c0-2.21-1.79-4-4-4zm0 24H12V20h24v20z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">Change your password</span>
+                            <span class="text-muted">3 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="javascript:;" class="media">
+                                    <span class="pull-left media-icon">
+                                        <span class="circle-icon sm bg-danger">
+                                          <md-icon class="colo-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M22 6V4H6.82l2 2H22zM1.92 1.65L.65 2.92l1.82 1.82C2.18 5.08 2 5.52 2 6v11H0v3h17.73l2.35 2.35 1.27-1.27L3.89 3.62 1.92 1.65zM4 6.27L14.73 17H4V6.27zM23 8h-6c-.55 0-1 .45-1 1v4.18l2 2V10h4v7h-2.18l3 3H23c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1z"></path></svg></md-icon>
+                                        </span>
+                                    </span>
+
+                        <div class="media-body">
+                            <span class="block">New feature added</span>
+                            <span class="text-muted">9 hours ago</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="panel-footer">
+                <a href="javascript:;">Show all notifications.</a>
+            </div>
+        </div>
+    </li>
+  <li class="list-notifications__item ng-scope" ng-controller="UserSwitchColorsCtrl">
+    <a md-ink-ripple="#8C8C8C" href="javascript:;" ng-click="showGridBottomSheet($event)" class="" aria-label="Change theme colors">
+      <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z"></path></svg></md-icon>
+      
+    </a>
+  </li>
+    <li class="list-notifications__item">
+        <a md-ink-ripple="#8C8C8C" href="#/tasks" class="" aria-label="My todo list">
+          <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M38 6h-8.37c-.82-2.32-3.02-4-5.63-4s-4.81 1.68-5.63 4H10c-2.21 0-4 1.79-4 4v28c0 2.21 1.79 4 4 4h28c2.21 0 4-1.79 4-4V10c0-2.21-1.79-4-4-4zM24 6c1.1 0 2 .89 2 2s-.9 2-2 2-2-.89-2-2 .9-2 2-2zm4 28H14v-4h14v4zm6-8H14v-4h20v4zm0-8H14v-4h20v4z"></path></svg></md-icon>
+          
+        </a>
+    </li>
+  <li class="list-notifications__item ng-scope" ng-controller="NavCtrl">
+    <a md-ink-ripple="#8C8C8C" ng-click="toggleAlternativeMenu()" class="" aria-label="Toggle alternate menu">
+      <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"></path></svg></md-icon>
+      
+    </a>
+  </li>
+</ul>
+
+
+<ul class="nav-button pull-right list-unstyled ng-scope" ng-controller="RightNavbarCtrl">
+    <li>
+        <a md-ink-ripple="#bbb" ng-click="toggleRightNavbar()" href="javascript:;" class="">
+          <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M3 21h18v-2H3v2zm6-4h12v-2H9v2zm-6-4h18v-2H3v2zm6-4h12V7H9v2zM3 3v2h18V3H3z"></path></svg></md-icon>
+        </a>
+    </li>
+</ul>
+
+<ul class="nav-button pull-right list-unstyled">
+
+    <li class="dropdown text-small nav-profile">
+        <a md-ink-ripple="#bbb" href="javascript:;" class="dropdown-toggle text-muted" data-toggle="dropdown" aria-expanded="false">
+            <span class="nav-profile__welcome-text"><i class="fa fa-angle-down"></i>&nbsp; Welcome John Doe &nbsp; </span><img src="../dist/images/user.png" alt="" class="img30_30">
+        </a>
+
+        <div class="dropdown-menu pull-right panel panel-default">
+
+            <ul class="list-group">
+
+                <li class="list-group-item--header">
+                  Profile settings
+                </li>
+
+                <li class="list-group-item">
+                    <a href="#/pages/profile">
+
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#/tasks">
+
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#/contact">
+
+                    <span>Contact</span>
+                  </a>
+                </li>
+
+            </ul>
+            <div class="panel-footer">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <a href="#/pages/lock-screen">
+                    <md-icon class="color-warning ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M36 16h-2v-4c0-5.52-4.48-10-10-10S14 6.48 14 12v4h-2c-2.21 0-4 1.79-4 4v20c0 2.21 1.79 4 4 4h24c2.21 0 4-1.79 4-4V20c0-2.21-1.79-4-4-4zM24 34c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.2-18H17.8v-4c0-3.42 2.78-6.2 6.2-6.2 3.42 0 6.2 2.78 6.2 6.2v4z"></path></svg></md-icon>
+                    <span>Lock</span>
+                  </a>
+                </li>
+                <li class="list-group-item">
+                  <a href="#/pages/signin">
+                    <md-icon class="color-danger ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M10.09 15.59L11.5 17l5-5-5-5-1.41 1.41L12.67 11H3v2h9.67l-2.58 2.59zM19 3H5c-1.11 0-2 .9-2 2v4h2V5h14v14H5v-4H3v4c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"></path></svg></md-icon>
+                    <span>Log out</span>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+        </div>
+    </li>
+
+</ul>
+
+</div>
+
+</header>
+
+
+</section>
+    </div>
+    <!-- uiView:  --><section ui-view="" id="content" class="animate-fade-up ng-scope"><!-- Breadcrumbs -->
+<div class="region-breadcrumbs ng-scope">
+    <ol class="breadcrumb">
+        <li><a href="/#"><i class="fa fa-home"></i></a></li>
+        <li class="active">Dashboard</li>
+    </ol>
+</div>
+<!-- end Breadcrumbs -->
+
+<div class="page page-dashboard ng-scope" data-ng-controller="DashboardCtrl">
+
+<section>
+
+  <div class="row">
+
+    <div class="col-md-3">
+
+      <section class="md-content-section ng-scope" data-ng-controller="gaugeCtrl">
+
+        <md-content class="md-default-theme">
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="">
+              <canvas data-gauge-chart="" data-gauge-data="gaugeHome.gaugeData" data-gauge-options="gaugeHome.gaugeOptions" style="width: 220px; height: 110px; " class="ng-isolate-scope"></canvas>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Sales
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-primary">80% </strong>
+                <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path></svg></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+      <section class="md-content-section ng-scope" data-ng-controller="flotChartCtrl">
+
+        <md-content class="md-default-theme">
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="small-box-chart">
+              <div class="small-flot ng-isolate-scope" data-flot-chart="" data-data="line1Small.data" data-options="line1Small.options" style="width: 70%; height: 70px; padding: 0px; position: relative;"><canvas class="flot-base" width="209" height="70" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 209px; height: 70px;"></canvas><canvas class="flot-overlay" width="209" height="70" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 209px; height: 70px;"></canvas></div>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Memory
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-accent">40% </strong><md-icon class="color-accent ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M15 9H9v6h6V9zm-2 4h-2v-2h2v2zm8-2V9h-2V7c0-1.1-.9-2-2-2h-2V3h-2v2h-2V3H9v2H7c-1.1 0-2 .9-2 2v2H3v2h2v2H3v2h2v2c0 1.1.9 2 2 2h2v2h2v-2h2v2h2v-2h2c1.1 0 2-.9 2-2v-2h2v-2h-2v-2h2zm-4 6H7V7h10v10z"></path></svg></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+
+      <section class="md-content-section ng-scope" data-ng-controller="sparklineCtrl">
+
+        <md-content class="md-default-theme">
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="small-box-chart">
+                <span data-sparkline="" data-spark-data="simpleChart2Long.sparkData" data-spark-options="simpleChart2Long.sparkOptions" class="ng-isolate-scope"><canvas width="119" height="50" style="display: inline-block; width: 119px; height: 50px; vertical-align: top;"></canvas></span>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Warnings
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-warning">183 </strong>
+                <md-icon class="color-warning ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path></svg></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+    <div class="col-md-3">
+
+
+      <section class="md-content-section ng-scope" data-ng-controller="sparklineCtrl">
+
+        <md-content class="md-default-theme">
+          <div class="small-box-icon no-padding text-center">
+
+            <div class="small-box-chart">
+                <span data-sparkline="" data-spark-data="simpleChart2dangerLong.sparkData" data-spark-options="simpleChart2dangerLong.sparkOptions" class="ng-isolate-scope"><canvas width="119" height="50" style="display: inline-block; width: 119px; height: 50px; vertical-align: top;"></canvas></span>
+            </div>
+            <div class="">
+              <div class="col-md-7">
+                <p>
+                  Critical issues
+                </p>
+              </div>
+              <div class="col-md-5">
+                <strong class="color-danger">90% </strong>
+                <md-icon class="color-danger ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M22 5.7l-4.6-3.9-1.3 1.5 4.6 3.9L22 5.7zM7.9 3.4L6.6 1.9 2 5.7l1.3 1.5 4.6-3.8zM12.5 8H11v6l4.7 2.9.8-1.2-4-2.4V8zM12 4c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm0 16c-3.9 0-7-3.1-7-7s3.1-7 7-7 7 3.1 7 7-3.1 7-7 7z"></path></svg></md-icon>
+              </div>
+            </div>
+          </div>
+        </md-content>
+
+      </section>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+<section>
+
+    <div class="row">
+
+        <div class="col-sm-8">
+
+          <section class="md-content-section">
+
+            <md-content class="md-default-theme">
+              <div class="md-content__body">
+
+                <div data-ng-controller="flotChartCtrl" class="ng-scope">
+
+                  <div class="choices"><br><div class="choice-item"><label for="id0" class="ui-checkbox"><input name="0" type="checkbox" id="id0" checked="checked" value="option1"><span>New visitors</span></label></div><br><div class="choice-item"><label for="id1" class="ui-checkbox"><input name="1" type="checkbox" id="id1" checked="checked" value="option1"><span>Returning visitors</span></label></div></div>
+
+                  <div class="choice-switches">
+
+                    <div layout="row" layout-wrap="">
+
+                      <div flex="">
+                        <md-switch ng-model="new_visitors" ng-change="switchClick(0)" name="0" class="md-primary ng-pristine ng-untouched ng-valid md-default-theme md-checked" aria-label="New visitors" role="checkbox" tabindex="0" aria-checked="true" aria-invalid="false"><div class="md-container"><div class="md-bar"></div><div class="md-thumb-container"><div class="md-thumb" md-ink-ripple="" md-ink-ripple-checkbox=""></div></div></div><div ng-transclude="" class="md-label"><span class="ng-scope">
+                          New visitors
+                        </span></div></md-switch>
+                      </div>
+
+                      <div flex="">
+                        <md-switch ng-model="returning_visitors" ng-change="switchClick(1)" name="1" class="md-accent ng-valid md-default-theme ng-dirty ng-valid-parse md-checked ng-touched" aria-label="Returning visitors" role="checkbox" tabindex="0" aria-checked="true" aria-invalid="false"><div class="md-container"><div class="md-bar"></div><div class="md-thumb-container"><div class="md-thumb" md-ink-ripple="" md-ink-ripple-checkbox=""><div class="md-ripple-container"></div></div></div></div><div ng-transclude="" class="md-label"><span class="ng-scope">
+                          Returning visitors
+                        </span></div></md-switch>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div data-flot-chart="" data-data="line1.data" data-options="line1.options" style="width: 100%; height: 300px; padding: 0px; position: relative;" class="ng-isolate-scope"><canvas class="flot-base" width="862" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 862px; height: 300px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div></div><canvas class="flot-overlay" width="862" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 862px; height: 300px;"></canvas><div class="legend"><div style="position: absolute; width: 110px; height: 32px; top: 18px; right: 18px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:18px;right:18px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(0,150,136);overflow:hidden"></div></div></td><td class="legendLabel">New visitors</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(255,82,82);overflow:hidden"></div></div></td><td class="legendLabel">Returning visitors</td></tr></tbody></table></div></div>
+                </div>
+
+                <br><br>
+
+                <div class="row text-center">
+
+                  <div class="col-md-7">
+                    <h2>
+                      Total earnings
+                    </h2>
+                    <h2 class="color-primary">
+                      $68,4545,454
+                    </h2>
+
+                    <br>
+
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p>
+                          <md-icon class="color-primary ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M23.6 21.8c-4.54-1.18-6-2.39-6-4.29 0-2.18 2.01-3.71 5.4-3.71 3.56 0 4.88 1.7 5 4.2h4.42c-.13-3.45-2.24-6.59-6.42-7.62V6h-6v4.32c-3.88.85-7 3.35-7 7.22 0 4.62 3.83 6.92 9.4 8.26 5.01 1.2 6 2.95 6 4.83 0 1.37-.97 3.57-5.4 3.57-4.12 0-5.75-1.85-5.96-4.2h-4.41c.25 4.38 3.52 6.83 7.37 7.66V42h6v-4.3c3.89-.75 7-3 7-7.11 0-5.66-4.86-7.6-9.4-8.79z"></path></svg></md-icon>
+                        </p>
+                        <p class="color-primary">
+                          $68,4545,454
+                        </p>
+                        <p>
+                          Monthly sales
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <p>
+                          <md-icon class="color-warning ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M32.49 15.51C30.14 13.17 27.07 12 24 12v12l-8.49 8.49c4.69 4.69 12.28 4.69 16.97 0 4.69-4.69 4.69-12.29.01-16.98zM24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.96 20-20c0-11.05-8.95-20-20-20zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z"></path></svg></md-icon>
+                        </p>
+                        <p class="color-warning">
+                          $68,4545,454
+                        </p>
+                        <p>
+                          Daily income
+                        </p>
+                      </div>
+                      <div class="col-md-4">
+                        <p>
+                          <md-icon class="color-danger ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M20 40h8V8h-8v32zM8 40h8V24H8v16zm24-22v22h8V18h-8z"></path></svg></md-icon>
+                        </p>
+                        <p class="color-danger">
+                          $68,4545,454
+                        </p>
+                        <p>
+                          Yearly costs
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-5">
+
+                    <br><br>
+
+                    <div data-ng-controller="jqvmapCtrl" class="ng-scope">
+                      <div class="ui-map ng-isolate-scope" style="width: 100%; height: 150px; position: relative; overflow: hidden;" ui-jqvmap="" options="worldMapSmall"><svg width="342" height="150"><g transform="scale(0.2727272727272727) translate(152.00000000000006, 0)"></g></svg></div>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+        <div class="col-sm-4 ng-scope" data-ng-controller="chartingCtrl">
+            <div>
+              <section class="md-content-section">
+                <md-card class="md-default-theme">
+                  <!--<img src="../dist/images/background/bg_weather3.png" alt="Washed Out">-->
+                  <md-card-header class="bg-primary">
+                    <h3>
+                      Sales in January
+                    </h3>
+                    <div data-ng-controller="sparklineCtrl" class="ng-scope">
+                      <span data-sparkline="" data-spark-data="simpleChartNoFill.sparkData" data-spark-options="simpleChartNoFill.sparkOptions" class="ng-isolate-scope"><canvas width="343" height="75" style="display: inline-block; width: 343px; height: 75px; vertical-align: top;"></canvas></span>
+                    </div>
+                  </md-card-header>
+                  <md-card-content>
+                    <div ng-controller="HomeFabCtrl" layout="column" class="ng-scope">
+                      <div class="lock-size homeSpeedDial" layout="row" layout-align="center center">
+                        <md-fab-speed-dial md-open="demo.isOpen" md-direction="left" ng-class="demo.selectedMode" class="ng-isolate-scope md-fling md-left md-noop"><div class="md-css-variables"></div>
+                          <md-fab-trigger>
+                            <button class="md-fab md-accent md-button md-default-theme" ng-transclude="" aria-label="menu">
+                              <md-icon class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></md-icon>
+                            </button>
+                          </md-fab-trigger>
+                          <md-fab-actions>
+                            <div class="md-fab-action-item"><button class="md-fab md-raised md-mini md-danger md-button md-default-theme" ng-transclude="" aria-label="Airplane">
+                              <md-icon class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M13 9V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5v3.68l7.83 7.83L21 16v-2l-8-5zM3 5.27l4.99 4.99L2 14v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-3.73L18.73 21 20 19.73 4.27 4 3 5.27z"></path></svg></md-icon>
+                            </button></div>
+                            <div class="md-fab-action-item"><button class="md-fab md-raised md-mini md-info md-button md-default-theme" ng-transclude="" aria-label="Bluetooth">
+                              <md-icon class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M17.71 7.71L12 2h-1v7.59L6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 11 14.41V22h1l5.71-5.71-4.3-4.29 4.3-4.29zM13 5.83l1.88 1.88L13 9.59V5.83zm1.88 10.46L13 18.17v-3.76l1.88 1.88z"></path></svg></md-icon>
+                            </button></div>
+                            <div class="md-fab-action-item"><button class="md-fab md-raised md-mini md-warning md-button md-default-theme" ng-transclude="" aria-label="Google Inbox">
+                              <md-icon class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M19 3H4.99c-1.1 0-1.98.9-1.98 2L3 19c0 1.1.89 2 1.99 2H19c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12h-4c0 1.66-1.34 3-3 3s-3-1.34-3-3H4.99V5H19v10zm-3-5h-2V7h-4v3H8l4 4 4-4z"></path></svg></md-icon>
+                            </button></div>
+                          </md-fab-actions>
+                        </md-fab-speed-dial>
+                      </div>
+                    </div>
+                    <div class="text-center circle-statistic ng-scope" data-ng-controller="chartingCtrl">
+
+                      <br>
+
+                      <ul>
+                        <li class="left-statistics-info">
+                          <p class="color-warning">
+                            50%
+                            <md-icon class="color-warning ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path></svg></md-icon>
+                          </p>
+                          <p>
+                            Go up
+                          </p>
+                        </li>
+                        <li>
+                          <div easypiechart="" options="easypiemedium1.options" percent="easypiemedium1.percent" class="easypiechartmedium ng-isolate-scope">
+                                    <span class="pie-percent">
+                                        <div class="countTo_small ng-scope" data-ng-controller="countTo">
+                                          <span count-to="42" value="0" duration="2" class="ng-scope">42</span>%
+                                        </div>
+
+                                    </span>
+                          <canvas height="80" width="80"></canvas></div>
+                        </li>
+                        <li class="right-statistics-info">
+                          <p class="color-accent">
+                            20%
+                            <md-icon class="color-accent ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M16 18l2.29-2.29-4.88-4.88-4 4L2 7.41 3.41 6l6 6 4-4 6.3 6.29L22 12v6z"></path></svg></md-icon>
+                          </p>
+                          <p>
+                            Go down
+                          </p>
+                        </li>
+                      </ul>
+
+                      <p class="text-small">
+                          Information is available every day at midningt
+                      </p>
+
+                    </div>
+
+                  </md-card-content>
+                </md-card>
+              </section>
+
+            </div>
+
+            <div>
+
+              <section class="md-content-section">
+                <md-content class="md-default-theme">
+                  <div class="md-content__body">
+                    <section class="panel-box text-center">
+                      <ul class="list-justified text-center">
+                        <li>
+                          <p class="size-h2 color-info"><i class="wi wi-cloudy"></i></p>
+                          <p class="text-muted">Tuesday</p>
+                        </li>
+                        <li>
+                          <p class="size-h2 color-warning"><i class="wi wi-day-thunderstorm"></i></p>
+                          <p class="text-muted">Wednesday</p>
+                        </li>
+                        <li>
+                          <p class="size-h2 color-danger"><i class="wi wi-day-snow"></i></p>
+                          <p class="text-muted">Thursday</p>
+                        </li>
+                      </ul>
+                    </section>
+                  </div>
+                </md-content>
+              </section>
+
+            </div>
+
+            <div>
+              <section class="md-content-section">
+                <md-card class="md-default-theme">
+                  <md-card-content>
+                    <div class="home-mini-card ng-scope" data-ng-controller="sparklineCtrl">
+
+                      <div class="row">
+                        <div class="col-md-5">
+                          <br>
+                          <span data-sparkline="" data-spark-data="simpleChart2Long.sparkData" data-spark-options="simpleChart2Long.sparkOptions" class="ng-isolate-scope"><canvas width="119" height="50" style="display: inline-block; width: 119px; height: 50px; vertical-align: top;"></canvas></span>
+                        </div>
+                        <div class="col-md-7">
+                          <br>
+                          <p class="color-warning">
+                            50%
+                            <md-icon class="color-warning ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"></path></svg></md-icon>
+                          </p>
+                          <p>
+                            Daily returning visitors
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </md-card-content>
+                </md-card>
+              </section>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="md-content-section">
+
+  <div class="row">
+    <div class="col-md-3">
+      <md-content class="md-default-theme">
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-primary">
+                  <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M43.98 8c0-2.21-1.77-4-3.98-4H8C5.79 4 4 5.79 4 8v24c0 2.21 1.79 4 4 4h28l8 8-.02-36zM36 28H12v-4h24v4zm0-6H12v-4h24v4zm0-6H12v-4h24v4z"></path></svg></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-primary">
+                  550
+                </h2>
+                <p>
+                  Unread messages
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+    <div class="col-md-3">
+      <md-content class="md-default-theme">
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-accent">
+                  <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M36 14l-2.83-2.83-12.68 12.69 2.83 2.83L36 14zm8.49-2.83L23.31 32.34 14.97 24l-2.83 2.83L23.31 38l24-24-2.82-2.83zM.83 26.83L12 38l2.83-2.83L3.66 24 .83 26.83z"></path></svg></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-accent">
+                  150
+                </h2>
+                <p>
+                  Opened tasks
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+    <div class="col-md-3">
+      <md-content class="md-default-theme">
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-warning">
+                  <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M40 16h-5.62c-.9-1.56-2.14-2.91-3.63-3.92L34 8.83 31.17 6l-4.35 4.35c-.9-.22-1.85-.35-2.82-.35-.97 0-1.92.13-2.82.35L16.83 6 14 8.83l3.25 3.25c-1.49 1.01-2.73 2.36-3.63 3.92H8v4h4.18c-.11.65-.18 1.32-.18 2v2H8v4h4v2c0 .68.07 1.35.18 2H8v4h5.62c2.07 3.58 5.94 6 10.38 6s8.31-2.42 10.38-6H40v-4h-4.18c.11-.65.18-1.32.18-2v-2h4v-4h-4v-2c0-.68-.07-1.35-.18-2H40v-4zM28 32h-8v-4h8v4zm0-8h-8v-4h8v4z"></path></svg></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-warning">
+                  560
+                </h2>
+                <p>
+                  Issues pending
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+    <div class="col-md-3">
+      <md-content class="md-default-theme">
+        <div class="md-content__body">
+          <section class="home-mini-card">
+
+            <div class="row">
+              <div class="col-md-4">
+                <span class="circle-icon md bg-danger">
+                  <md-icon class="color-white ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 48 48" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M12 36c0 1.1.9 2 2 2h2v7c0 1.66 1.34 3 3 3s3-1.34 3-3v-7h4v7c0 1.66 1.34 3 3 3s3-1.34 3-3v-7h2c1.1 0 2-.9 2-2V16H12v20zM7 16c-1.66 0-3 1.34-3 3v14c0 1.66 1.34 3 3 3s3-1.34 3-3V19c0-1.66-1.34-3-3-3zm34 0c-1.66 0-3 1.34-3 3v14c0 1.66 1.34 3 3 3s3-1.34 3-3V19c0-1.66-1.34-3-3-3zM31.06 4.32l2.61-2.61c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0L29.3 3.25C27.7 2.46 25.91 2 24 2c-1.92 0-3.72.46-5.33 1.26L15.7.29c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l2.62 2.62C13.94 6.51 12 10.03 12 14h24c0-3.98-1.95-7.5-4.94-9.68zM20 10h-2V8h2v2zm10 0h-2V8h2v2z"></path></svg></md-icon>
+                </span>
+              </div>
+              <div class="col-md-8">
+                <h2 class="color-danger">
+                  330
+                </h2>
+                <p>
+                  Bugs reported
+                </p>
+              </div>
+            </div>
+
+          </section>
+        </div>
+      </md-content>
+    </div>
+  </div>
+
+</section>
+
+
+<section>
+
+    <div class="row">
+      <div class="col-sm-12">
+
+        <section class="md-content-section">
+
+          <md-content class="md-default-theme">
+            <div class="md-content__body">
+
+              <div class="text-left col-sm-6">
+                <h2>
+                  Realtime performance feed
+                </h2>
+                <p class="text-muted medium">
+                  Updated on realtime based on a number of API calls
+                </p>
+              </div>
+
+              <div class="panel-body col-sm-8 ng-scope" data-ng-controller="flotChartCtrl">
+
+                <div class="homepage-performance-chart ng-scope" data-ng-controller="flotChartCtrl">
+                  <div data-flot-chart="" data-data="area.data" data-options="area.options" style="width: 100%; height: 300px; padding: 0px; position: relative;" class="ng-isolate-scope"><canvas class="flot-base" width="852" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 852px; height: 300px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div><div class="flot-y-axis flot-y2-axis yAxis y2Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div></div><canvas class="flot-overlay" width="852" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 852px; height: 300px;"></canvas><div class="legend"><div style="position: absolute; width: 77px; height: 32px; top: 13px; right: 18px; background-color: rgb(255, 255, 255); opacity: 0.85;"> </div><table style="position:absolute;top:13px;right:18px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(255,82,82);overflow:hidden"></div></div></td><td class="legendLabel">New visits</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(0,150,136);overflow:hidden"></div></div></td><td class="legendLabel">New sales</td></tr></tbody></table></div></div>
+                </div>
+
+              </div>
+
+              <div class="col-sm-4">
+
+                <h4>
+                  Performance listing
+                </h4>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Overall CSS loading
+                    <span class="pull-right"> 60%</span>
+                  </p>
+                  <div class="progressbar-xs no-margin progress ng-isolate-scope" value="60" type="warning">
+  <div class="progress-bar progress-bar-warning" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="60%" ng-transclude="" style="width: 60%;"></div>
+</div>
+                </div>
+                <br>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Overall Js loading time
+                    <span class="pull-right"> 35%</span>
+                  </p>
+                  <div class="progressbar-xs no-margin progress ng-isolate-scope" value="35" type="success">
+  <div class="progress-bar progress-bar-success" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="35%" ng-transclude="" style="width: 35%;"></div>
+</div>
+                </div>
+                <br>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Requests / user
+                    <span class="pull-right"> 92%</span>
+                  </p>
+                  <div class="progressbar-xs no-margin progress ng-isolate-scope" value="92" type="danger">
+  <div class="progress-bar progress-bar-danger" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="92%" ng-transclude="" style="width: 92%;"></div>
+</div>
+                </div>
+                <br>
+
+                <div class="small-progress">
+                  <p class="text-muted medium">
+                    Caching requests
+                    <span class="pull-right"> 82%</span>
+                  </p>
+                  <div class="progressbar-xs no-margin progress ng-isolate-scope" value="82" type="info">
+  <div class="progress-bar progress-bar-info" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="82%" ng-transclude="" style="width: 82%;"></div>
+</div>
+                </div>
+
+              </div>
+            </div>
+          </md-content>
+
+        </section>
+
+
+      </div>
+    </div>
+</section>
+
+<section>
+
+    <div class="row">
+
+
+        <div class="col-sm-6">
+
+          <section class="md-content-section">
+
+            <md-content class="md-default-theme">
+              <div class="md-content__body">
+                <h5>
+                  User management
+                </h5>
+                <br>
+                <ul class="team">
+                  <li>
+                    <img src="../dist/images/team1.jpg" alt="" class="img30_30">
+                    <span><p class="medium">John doe</p></span>
+                    <span class="label label-primary">admin</span>
+                  </li>
+
+                  <li>
+                    <img src="../dist/images/team2.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Jane Diamond</p></span>
+                    <span class="label label-warning">Tester</span>
+                  </li>
+                  <li>
+                    <img src="../dist/images/team3.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Gustav Gurty</p></span>
+                    <span class="label label-danger">Tester</span>
+                  </li>
+                  <li>
+                    <img src="../dist/images/team4.jpg" alt="" class="img30_30">
+                    <span><p class="medium">John Gus</p></span>
+                    <span class="label label-accent">admin</span>
+                  </li>
+                  <li>
+                    <img src="../dist/images/team6.jpg" alt="" class="img30_30">
+                    <span><p class="medium">Anthony Watry</p></span>
+                    <span class="label label-success">API Guru</span>
+                  </li>
+                </ul>
+
+                <hr>
+
+                <div>
+                  <span class="badge badge-info">2</span>
+                  <div class="space"></div>
+                  <span class="badge badge-warning">1</span>
+                  <div class="space"></div>
+                  <span class="badge badge-danger">1</span>
+                  <div class="space"></div>
+                  <span class="badge badge-success">1</span>
+                </div>
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+        <div class="col-sm-6 ng-scope" ng-controller="morrisChartCtrl">
+          <section class="md-content-section">
+
+            <md-content class="md-default-theme">
+              <div class="md-content__body">
+                <div morris-chart="" data-data="comboData" data-type="line" data-xkey="year" data-ykeys="[&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]" data-labels="[&quot;Value A&quot;, &quot;Value B&quot;, &quot;Value C&quot;]" data-line-colors="[&quot;#009688&quot;,&quot;#FF5252&quot;,&quot;#F2B53F&quot;]" data-line-width="3" class="ng-isolate-scope" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="342" version="1.1" width="632" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.21875px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="36.171875" y="307" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M48.671875,307H607" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="36.171875" y="236.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7.5</tspan></text><path fill="none" stroke="#aaaaaa" d="M48.671875,236.5H607" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="36.171875" y="166" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15</tspan></text><path fill="none" stroke="#aaaaaa" d="M48.671875,166H607" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="36.171875" y="95.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22.5</tspan></text><path fill="none" stroke="#aaaaaa" d="M48.671875,95.5H607" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="36.171875" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan></text><path fill="none" stroke="#aaaaaa" d="M48.671875,25H607" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="607" y="319.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2013</tspan></text><text x="495.15101600985224" y="319.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="383.60763033661743" y="319.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><text x="272.0642446633826" y="319.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2010</tspan></text><text x="160.5208589901478" y="319.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2009</tspan></text><text x="48.671875" y="319.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2008</tspan></text><path fill="none" stroke="#f2b53f" d="M48.671875,194.2C76.63412099753694,151.89999999999998,132.55861299261085,34.412859097127225,160.5208589901478,25C188.4067054084565,15.612859097127222,244.1783982450739,106.075,272.0642446633826,119C299.9500910816913,131.925,355.72178391830874,120.17500000000001,383.60763033661743,128.4C411.4934767549261,136.625,467.26516959154355,185.9733926128591,495.15101600985224,184.8C523.1132620073892,183.6233926128591,579.0377540024631,135.45,607,119" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#ff5252" d="M48.671875,156.6C76.63412099753694,142.5,132.55861299261085,97.84678522571818,160.5208589901478,100.19999999999999C188.4067054084565,102.54678522571818,244.1783982450739,163.65,272.0642446633826,175.4C299.9500910816913,187.15,355.72178391830874,200.075,383.60763033661743,194.2C411.4934767549261,188.325,467.26516959154355,140.13392612859099,495.15101600985224,128.4C523.1132620073892,116.63392612859099,579.0377540024631,107.24999999999999,607,100.19999999999999" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#009688" d="M48.671875,119C76.63412099753694,142.5,132.55861299261085,195.35088919288646,160.5208589901478,213C188.4067054084565,230.60088919288646,244.1783982450739,254.125,272.0642446633826,260C299.9500910816913,265.875,355.72178391830874,277.625,383.60763033661743,260C411.4934767549261,242.375,467.26516959154355,145.98803009575923,495.15101600985224,119C523.1132620073892,91.93803009575925,579.0377540024631,62.60000000000001,607,43.80000000000001" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="48.671875" cy="194.2" r="4" fill="#f2b53f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="160.5208589901478" cy="25" r="4" fill="#f2b53f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="272.0642446633826" cy="119" r="4" fill="#f2b53f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="383.60763033661743" cy="128.4" r="4" fill="#f2b53f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="495.15101600985224" cy="184.8" r="4" fill="#f2b53f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="607" cy="119" r="4" fill="#f2b53f" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="48.671875" cy="156.6" r="4" fill="#ff5252" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="160.5208589901478" cy="100.19999999999999" r="4" fill="#ff5252" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="272.0642446633826" cy="175.4" r="4" fill="#ff5252" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="383.60763033661743" cy="194.2" r="4" fill="#ff5252" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="495.15101600985224" cy="128.4" r="4" fill="#ff5252" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="607" cy="100.19999999999999" r="4" fill="#ff5252" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="48.671875" cy="119" r="4" fill="#009688" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="160.5208589901478" cy="213" r="4" fill="#009688" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="272.0642446633826" cy="260" r="4" fill="#009688" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="383.60763033661743" cy="260" r="4" fill="#009688" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="495.15101600985224" cy="119" r="4" fill="#009688" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="607" cy="43.80000000000001" r="4" fill="#009688" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 554px; top: 53px;"><div class="morris-hover-row-label">2013</div><div class="morris-hover-point" style="color: #009688">
+  Value A:
+  28
+</div><div class="morris-hover-point" style="color: #FF5252">
+  Value B:
+  22
+</div><div class="morris-hover-point" style="color: #F2B53F">
+  Value C:
+  20
+</div></div></div>
+              </div>
+            </md-content>
+
+          </section>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="panel panel-default">
+    <!--<div class="panel-heading"><strong><i class="fa fa-list panel-ico"></i>Table</strong></div>-->
+
+  <section class="md-content-section">
+
+    <md-content class="md-default-theme">
+      <div class="md-content__body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Task</th>
+              <th>Completion</th>
+              <th>Assigned to</th>
+              <th>Completion %</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>1</td>
+              <td><span class="color-primary"><i class="fa fa-level-up"></i></span> TWLT</td>
+              <td><span class="label label-primary">Pending</span></td>
+              <td>John Doe</td>
+              <td><div class="progressbar-xs no-margin progress ng-isolate-scope" value="55">
+  <div class="progress-bar" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="55%" ng-transclude="" style="width: 55%;"></div>
+</div>
+            </td></tr>
+            <tr>
+              <td>2</td>
+              <td><span class="color-accent"><i class="fa fa-level-up"></i></span> A16Z</td>
+              <td><span class="label label-accent">Testing</span></td>
+              <td>Carol Simmerman</td>
+              <td><div class="progressbar-xs no-margin progress ng-isolate-scope" value="34" type="accent">
+  <div class="progress-bar progress-bar-accent" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="34" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="34%" ng-transclude="" style="width: 34%;"></div>
+</div></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><span class="color-warning"><i class="fa fa-level-down"></i></span> DARK</td>
+              <td><span class="label label-warning">Due</span></td>
+              <td>Joselie Hanna</td>
+              <td><div class="progressbar-xs no-margin progress ng-isolate-scope" value="68" type="warning">
+  <div class="progress-bar progress-bar-warning" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="68%" ng-transclude="" style="width: 68%;"></div>
+</div></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><span class="color-success"><i class="fa fa-level-up"></i></span> Q300</td>
+              <td><span class="label label-success">Accepted</span></td>
+              <td>Johane Bayer</td>
+              <td><div class="progressbar-xs no-margin progress ng-isolate-scope" value="52" type="success">
+  <div class="progress-bar progress-bar-success" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="52" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="52%" ng-transclude="" style="width: 52%;"></div>
+</div></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td><span class="color-danger"><i class="fa fa-level-down"></i></span> RVNG</td>
+              <td><span class="label label-danger">Suspended</span></td>
+              <td>Donnavon Franklin</td>
+              <td><div class="progressbar-xs no-margin progress ng-isolate-scope" value="77" type="danger">
+  <div class="progress-bar progress-bar-danger" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="77%" ng-transclude="" style="width: 77%;"></div>
+</div></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td><span class="color-info"><i class="fa fa-level-down"></i></span> FDSA</td>
+              <td><span class="label label-info">In evaluation</span></td>
+              <td>Jane Modrid</td>
+              <td><div class="progressbar-xs no-margin progress ng-isolate-scope" value="55" type="success">
+  <div class="progress-bar progress-bar-success" ng-class="type &amp;&amp; 'progress-bar-' + type" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" ng-style="{width: percent + '%'}" aria-valuetext="55%" ng-transclude="" style="width: 55%;"></div>
+</div></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </md-content>
+
+  </section>
+
+</div>
+
+</div>
+  </section>
+  </div>
+
+  <md-sidenav class="md-sidenav-right md-whiteframe-z2 md-theme md-closed ng-isolate-scope" md-component-id="rightmessages" tabindex="-1">
+    <div class="ng-scope"><md-toolbar class="md-primary ng-scope md-default-theme">
+  <h1 class="md-toolbar-tools">My navigation menu</h1>
+</md-toolbar>
+<md-content ng-controller="RightNavbarCtrl" class="ng-scope md-default-theme">
+
+  <div class="messagesList">
+
+    <div ng-controller="ToolbarShrinkDemoCtrl" layout="column" flex="" layout-fill="" class="ng-scope">
+      <md-content style="height: 350px;" class="md-default-theme">
+        <md-list role="list" class="md-default-theme">
+         
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          <md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last --><md-divider md-inset="" ng-if="!$last" class="ng-scope md-default-theme"></md-divider><!-- end ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos --><md-list-item class="md-3-line md-no-proxy ng-scope" ng-repeat="item in todos" role="listitem">
+            <img ng-src="../dist/images/user.png" alt="Min Li Chan" class="face" src="../dist/images/user.png">
+
+            <div class="md-list-item-text">
+              <h3 class="ng-binding">Brunch this weekend?</h3>
+              <h4 class="ng-binding">Min Li Chan</h4>
+
+              <p class="ng-binding">
+                I'll be in your neighborhood doing errands.
+              </p>
+            </div>
+            <!-- ngIf: !$last -->
+          </md-list-item><!-- end ngRepeat: item in todos -->
+        </md-list>
+      </md-content>
+    </div>
+
+  </div>
+
+  <br>
+
+  <section class="md-content-section">
+    <md-content class="md-default-theme">
+      <div>
+        <section class="panel-box text-center">
+          <ul class="list-justified text-center">
+            <li>
+              <p class="size-h2 color-info"><i class="wi wi-cloudy"></i></p>
+              <p class="text-muted">Tuesday</p>
+            </li>
+            <li>
+              <p class="size-h2 color-warning"><i class="wi wi-day-thunderstorm"></i></p>
+              <p class="text-muted">Wednesday</p>
+            </li>
+            <li>
+              <p class="size-h2 color-danger"><i class="wi wi-day-snow"></i></p>
+              <p class="text-muted">Thursday</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </md-content>
+  </section>
+
+  <div class="text-center">
+    <button class="md-accent md-raised btn-width-medium md-button md-default-theme" ng-transclude="" ng-click="close()">
+      <md-icon class="ng-scope ng-isolate-scope md-default-theme" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fit="" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block;"><path d="M15 15H3v2h12v-2zm0-8H3v2h12V7zM3 13h18v-2H3v2zm0 8h18v-2H3v2zM3 3v2h18V3H3z"></path></svg></md-icon><span class="ng-scope">
+      Close Sidenav
+    </span></button>
+  </div>
+
+</md-content></div>
+  </md-sidenav>
+
+</div>
+
+<div class="page-loading-overlay loaded">
+  <div class="loader-2"></div>
+</div>
+
+<div class="load_circle_wrapper loaded">
+
+  <div class="loading_spinner">
+    <div id="wrap_spinner">
+      <md-progress-circular class="md-primary md-default-theme" md-mode="indeterminate" aria-valuemin="0" aria-valuemax="100" role="progressbar" style="transform: scale(1);"><div class="md-spinner-wrapper"><div class="md-inner"><div class="md-gap"></div><div class="md-left"><div class="md-half-circle"></div></div><div class="md-right"><div class="md-half-circle"></div></div></div></div></md-progress-circular>
+    </div>
+  </div>
+</div>
+
+<!-- Theme main app compiled with grunt (replace with below scripts if not using grunt) -->
+<script id="app_js" type="text/javascript" src="../dist/js/app.js"></script><script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+
+<!-- Replace main.js with all of these if not using grunt to compile -->
+<!--<script src="bower_components/bootstrap/../dist/js/bootstrap.min.js"></script>
+<script src="scripts/gmap.js"></script>
+<script src="bower_components/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+<script src="bower_components/angular-messages/angular-messages.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/raphael/raphael-min.js"></script>
+<script src="bower_components/morrisjs/morris.min.js"></script>
+<script src="bower_components/flot/jquery.flot.js"></script>
+<script src="bower_components/flot/jquery.flot.canvas.js"></script>
+<script src="bower_components/flot/jquery.flot.categories.js"></script>
+<script src="bower_components/flot/jquery.flot.crosshair.js"></script>
+<script src="bower_components/flot/jquery.flot.image.js"></script>
+<script src="bower_components/flot/jquery.flot.navigate.js"></script>
+<script src="bower_components/flot/jquery.flot.time.js"></script>
+<script src="bower_components/flot/jquery.flot.pie.js"></script>
+<script src="bower_components/flot/jquery.flot.resize.js"></script>
+<script src="bower_components/flot/jquery.flot.selection.js"></script>
+<script src="bower_components/flot/jquery.flot.stack.js"></script>
+<script src="bower_components/flot.curvedlines/curvedLines.js"></script>
+<script src="bower_components/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
+<script src="bower_components/jquery.sparkline.build/../dist/jquery.sparkline.min.js"></script>
+<script src="bower_components/easypie/../dist/angular.easypiechart.min.js"></script>
+<script src="bower_components/angular-wizard/../dist/angular-wizard.js"></script>
+<script src="bower_components/angular-ui-tree/../dist/angular-ui-tree.js"></script>
+<script src="bower_components/jqvmap/jqvmap/jquery.vmap.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="scripts/other_charts.js"></script>
+<script src="scripts/extras.js"></script>
+<script src="scripts/audio.min.js"></script>
+
+<script src="app/app.js"></script>
+<script src="app/config.js"></script>
+<script src="app/controllers.js"></script>
+<script src="app/directives.js"></script>
+<script src="app/services.js"></script>-->
+
+
+<div class="flotTip" style="display: none; position: absolute; left: 251px; top: 620px;"></div><div class="jqvmap-label" style="display: none;"></div><div class="jqvmap-label" style="display: none;"></div><div class="jqvmap-label" style="display: none;"></div><div class="jqvmap-label" style="display: none;"></div>
+<script type="text/javascript">
+      $(function(){
+        $("#nav-wrapper").slimScroll({
+          size: '8px', 
+          width: '100%', 
+          height: '100%', 
+          color: '#ff4800', 
+          allowPageScroll: true, 
+          alwaysVisible: true     
+        });
+      });
+    </script>
+</body></html>
