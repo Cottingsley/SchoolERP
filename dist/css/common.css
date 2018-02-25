@@ -4,7 +4,64 @@ md-bottom-sheet.md-list md-list-item {    color: rgba(0,0,0,0.87);}md-bottom-she
 .fa-smile:before {
     content: "\f118";
 }
-.ng-binding > a.action{
-	color:#428bca;
+.ng-binding > a.action,a.action{
+	text-align:center;
+	color:#009688;
 	font-size:12px;
+	width:100%;
+}
+.ng-binding.action{
+	text-align:center;
+	color:#009688;
+	font-size:12px;
+}
+.seethrough:not(:focus){
+	color:rgba(0,0,0,0.87) !important;
+}
+.accordion {
+    background-color: #FF5252;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 14px;
+    transition: 0.4s;
+	border:1px solid #fff;
+}
+
+.accordion:hover {
+    background-color: #009688;
+     color:#fff;	
+}
+
+.accordionpanel {
+    
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: dashboard;
+}
+
+.fixedit{
+	position:fixed;
+	top: 167px;
+	width: 400px;
+}
+.img20_20{
+	width:20px;
+	height:20px;
+}
+
+.textbadge {
+    float: right;
+    display: inline-block;
+    max-width: 400px;
+    padding: 3px 7px;
+    font-size: 12px;
+    line-height: 1;
+    vertical-align: baseline;
+    text-align: right;
 }
