@@ -65,3 +65,109 @@ md-bottom-sheet.md-list md-list-item {    color: rgba(0,0,0,0.87);}md-bottom-she
     vertical-align: baseline;
     text-align: right;
 }
+.fa-bell.homewrk:before{
+	color:red;
+}
+.hwrkAnchor{
+	position:relative;
+}
+.hwrkAnchor > .hwrkNotify	{
+    position: absolute;
+    right: -14px;
+    top: -14px;
+}
+
+
+.panel-profile #englishheading{
+	background: url(../images/student/English.jpg) center/cover !important;
+}
+.panel-profile #mathsheading{
+	background: url(../images/student/Maths.jpg) center/cover !important;
+}
+.panel-profile #physicsheading{
+	background: url(../images/student/Physics.jpg) center/cover !important;
+}
+.panel-profile #chemistryheading{
+	background: url(../images/student/Chemistry.jpg) center/cover !important;
+}
+.panel-profile #historyheading{
+	background: url(../images/student/History.jpg) center/cover !important;
+}
+.panel-profile #geographyheading{
+	background: url(../images/student/Geography.jpg) center/cover !important;
+}
+
+
+
+.panel-profile h4 {
+    padding: 1% 8% 0px 10%;
+    text-align: left;
+    color: #a8a8a8;
+    text-shadow: 1px 1px 0 white;
+}
+
+.panel-profile form {
+  max-width: 80%;
+  /*text-align: center;*/
+  margin: 20px auto;
+}
+.panel-profile form input,.panel-profile form textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  resize: none;
+}
+.panel-profile form input:focus, .panel-profile form textarea:focus {
+  -moz-box-shadow: 0 0px 2px #e74c3c !important;
+  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
+  box-shadow: 0 0px 2px #e74c3c !important;
+}
+.panel-profile form #input-submit {
+  color: white;
+  background: #e74c3c;
+  cursor: pointer;
+}
+.panel-profile form #input-upload{
+  cursor: pointer;	
+}
+.panel-profile form #input-submit:hover {
+  -moz-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  -webkit-box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+  box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+.panel-profile form textarea {
+  height: 285px;
+}
+
+.panel-profile .half {
+  float: left;
+  width: 48%;
+  margin-bottom: 1em;
+}
+
+.panel-profile .right {
+  width: 50%;
+}
+
+.panel-profile .left {
+  margin-right: 2%;
+}
+.panel-profile .flupload{
+	padding:13px;
+	text-align:left;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+.panel-profile .hwrkimg{    
+	width: 371px;
+    max-height: 285px;
+}
