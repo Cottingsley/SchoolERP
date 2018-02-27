@@ -11,7 +11,6 @@
   
   <link rel="stylesheet" href="../dist/css/font-awesome.min.css">
   <link rel="stylesheet" href="../dist/css/common.css">
-  <link rel="stylesheet" href="../dist/css/time-table.css">
   <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../dist/css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="../dist/css/angular-material.min.css">
@@ -27,9 +26,6 @@
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400" rel="stylesheet" type="text/css">
 
 
-<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/common.js"></script>
-<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/util.js"></script>
-<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/stats.js"></script>
 
 </head>
 <body data-ng-app="app" id="app" data-custom-background="" data-off-canvas-nav="" data-ng-controller="AdminAppCtrl" class="ng-scope">
@@ -496,267 +492,118 @@
 <!-- end Breadcrumbs -->
 
 <div class="page page-dashboard ng-scope" style="height:100%;" data-ng-controller="DashboardCtrl">
-	<div class="row">
-		<div class="col-md-12">
-		<div class="tiva-timetable" data-view="week" data-mode="day" id="timetable-1">
-   <div class="timetable-week show-time">
-      <div class="timetable-axis">
-         <div class="axis-item">09:00</div>
-         <div class="axis-item">10:00</div>
-         <div class="axis-item">11:00</div>
-         <div class="axis-item">12:00</div>
-         <div class="axis-item">13:00</div>
-         <div class="axis-item">14:00</div>
-         <div class="axis-item">15:00</div>
-         <div class="axis-item">16:00</div>
-         <div class="axis-item">17:00</div>
-         <div class="axis-item">18:00</div>
-         <div class="axis-item">19:00</div>
-      </div>
-      <div class="timetable-columns">
-         <div class="timetable-column">
-            <div class="timetable-column-header ">Sunday<br><span>Feb 25, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-4" style="top:27px; height:82px; " href="#timetable-1-popup-0">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">English</div>
-                        <div class="timetable-time">09:30 - 11:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-               <div class="timetable-item">
-                  <a class="timetable-title color-1" style="top:330px; height:137px; " href="#timetable-1-popup-10">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Mathematics</div>
-                        <div class="timetable-time">15:00 - 17:30</div>
-                     </div>
-                  </a>
-                 
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-               <div class="grid-item first-column"></div>
-            </div>
-         </div>
-         <div class="timetable-column">
-            <div class="timetable-column-header ">Monday<br><span>Feb 26, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-2" style="top:247px; height:137px; " href="#timetable-1-popup-7">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">History</div>
-                        <div class="timetable-time">13:30 - 16:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-            </div>
-         </div>
-         <div class="timetable-column">
-            <div class="timetable-column-header ">Tuesday<br><span>Feb 27, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-1" style="top:55px; height:82px; " href="#timetable-1-popup-1">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Physics</div>
-                        <div class="timetable-time">10:00 - 11:30</div>
-                     </div>
-                  </a>
-                  
-               </div>
-               <div class="timetable-item">
-                  <a class="timetable-title color-3" style="top:330px; height:165px; width:50%;" href="#timetable-1-popup-8">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Chemistry</div>
-                        <div class="timetable-time">15:00 - 18:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-               <div class="timetable-item">
-                  <a class="timetable-title color-4" style="top:330px; height:165px; width:50%;left:50%" href="#timetable-1-popup-9">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Geography</div>
-                        <div class="timetable-time">15:00 - 18:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-            </div>
-         </div>
-         <div class="timetable-column">
-            <div class="timetable-column-header ">Wednesday<br><span>Feb 28, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-3" style="top:110px; height:55px; " href="#timetable-1-popup-3">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Environmental Science</div>
-                        <div class="timetable-time">11:00 - 12:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-               <div class="timetable-item">
-                  <a class="timetable-title color-1" style="top:220px; height:137px; " href="#timetable-1-popup-6">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Hindi</div>
-                        <div class="timetable-time">13:00 - 15:30</div>
-                     </div>
-                  </a>
-                  
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-            </div>
-         </div>
-         <div class="timetable-column">
-            <div class="timetable-column-header ">Thursday<br><span>Mar 1, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-2" style="top:165px; height:110px; " href="#timetable-1-popup-4">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Subject name</div>
-                        <div class="timetable-time">12:00 - 14:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-               <div class="timetable-item">
-                  <a class="timetable-title color-3" style="top:385px; height:165px; " href="#timetable-1-popup-12">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Subject name</div>
-                        <div class="timetable-time">16:00 - 19:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-            </div>
-         </div>
-         <div class="timetable-column">
-            <div class="timetable-column-header ">Friday<br><span>Mar 2, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-2" style="top:73px; height:64px; " href="#timetable-1-popup-2">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Subject name</div>
-                        <div class="timetable-time">10:20 - 11:30</div>
-                     </div>
-                  </a>
-                  
-               </div>
-               <div class="timetable-item">
-                  <a class="timetable-title color-4" style="top:330px; height:137px; " href="#timetable-1-popup-11">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Roger Hodgson</div>
-                        <div class="timetable-time">15:00 - 17:30</div>
-                     </div>
-                  </a>
-                  
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-            </div>
-         </div>
-         <div class="timetable-column">
-            <div class="timetable-column-header last-column">Saturday<br><span>Mar 3, 2018</span></div>
-            <div class="timetable-column-content">
-               <div class="timetable-item">
-                  <a class="timetable-title color-3" style="top:165px; height:220px; " href="#timetable-1-popup-5">
-                     <div class="timetable-title-wrap">
-                        <div class="timetable-name">Subject name</div>
-                        <div class="timetable-time">12:00 - 16:00</div>
-                     </div>
-                  </a>
-                  
-               </div>
-            </div>
-            <div class="timetable-column-grid">
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-               <div class="grid-item "></div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-		</div>
-	</div> 
 	
+		<div class="col-md-12">
+        <ul class="nav nav-tabs nav-tabs-highlight">
+            <li class=""><a href="#tbb_a" data-toggle="tab" aria-expanded="false">Attendance Chart</a></li>
+            <li class="active"><a href="#tbb_b" data-toggle="tab" aria-expanded="true">Attendance View</a></li>
+        </ul>
+        <h6 class="content-group text-semibold"></h6>
+        <div class="tab-content">
+            <div class="tab-pane" id="tbb_a">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">Pie Chart</h4>
+                            </div>
+                            <div class="panel-body" style="text-align:center;">
+                               <img src="../dist/images/attendance.png" style=""/>
+								<div class="labels"><span class="chart-label" style="background-color: rgb(194,229,135);">Present -  79.31%</span><span class="chart-label" style="background-color: rgb(252,153,142);">Absent -  20.69%</span></div>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane active" id="tbb_b">
+                <form id="studentabsent-form" action="/index.php/core/studentabsent/studentattendance" method="post">                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">Attendance</h4>
+                                </div>
+                                <div class="panel-body">
+                                                                        <div class="form-group col-sm-3 validating">
+                                        <label for="reg_input_name">Month</label>
+                                        <select maxlength="6" class="form-control" value="02" name="Studentabsent[date15]" id="Studentabsent_date15">
+<option value="0">Select</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select><div class="school_val_error" id="Studentabsent_date15_em_" style="display:none"></div>                                    </div>
+                                    <div class="form-group col-sm-3">
+                                        <label for="reg_input">&nbsp;</label>
+                                    </div> 
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="print">
+                        <div class="col-sm-12" id="attendancediv" style="">
+                            <div class="panel panel-default" id="attendance">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title" id="reporttitle">Attendance Report :  -  for the month of January</h4>
+                                </div>
+                                                                <div class="table-responsive">
+                                    <table class="table responsive table table-bordered table table-striped" id="studentattendence">
+                                        <thead>
+                                            <tr>
+                                                <th data-hide="phone,tablet" width="2%">1</th>
+                                                <th data-hide="phone,tablet" width="2%">2</th>
+                                                <th data-hide="phone,tablet" width="2%">3</th>
+                                                <th data-hide="phone,tablet" width="2%">4</th>
+                                                <th data-hide="phone,tablet" width="2%">5</th>
+                                                <th data-hide="phone,tablet" width="2%">6</th>  
+                                                <th data-hide="phone,tablet" width="2%">7</th>
+                                                <th data-hide="phone,tablet" width="2%">8</th>
+                                                <th data-hide="phone,tablet" width="2%">9</th>  
+                                                <th data-hide="phone,tablet" width="2%">10</th>
+                                                <th data-hide="phone,tablet" width="2%">11</th>
+                                                <th data-hide="phone,tablet" width="2%">12</th>  
+                                                <th data-hide="phone,tablet" width="2%">13</th>
+                                                <th data-hide="phone,tablet" width="2%">14</th>
+                                                <th data-hide="phone,tablet" width="2%">15</th>  
+                                                <th data-hide="phone,tablet" width="2%">16</th>
+                                                <th data-hide="phone,tablet" width="2%">17</th>
+                                                <th data-hide="phone,tablet" width="2%">18</th>  
+                                                <th data-hide="phone,tablet" width="2%">19</th>
+                                                <th data-hide="phone,tablet" width="2%">20</th>
+                                                <th data-hide="phone,tablet" width="2%">21</th>  
+                                                <th data-hide="phone,tablet" width="2%">22</th>
+                                                <th data-hide="phone,tablet" width="2%">23</th>
+                                                <th data-hide="phone,tablet" width="2%">24</th>  
+                                                <th data-hide="phone,tablet" width="2%">25</th>
+                                                <th data-hide="phone,tablet" width="2%">26</th>
+                                                <th data-hide="phone,tablet" width="2%">27</th>  
+                                                <th data-hide="phone,tablet" width="2%">28</th>
+                                                <th data-hide="phone,tablet" width="2%">29</th>
+                                                <th data-hide="phone,tablet" width="2%">30</th>  
+                                                <th data-hide="phone,tablet" width="2%">31</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="attendancebody"><tr></tr><tr><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:red">S</td><td style="color:#cccccc">A</td><td style="color:green"><b>X</b></td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:red">S</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:red">S</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:#cccccc">A</td><td style="color:red">S</td><td style="color:green"><b>X</b></td><td style="color:green"><b>X</b></td><td style="color:#cccccc">A</td></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                    </div></form>
+
+            </div>
+        </div>
+    </div>
 	</div> 
+</div> 
 
   <md-sidenav class="md-sidenav-right md-whiteframe-z2 md-theme md-closed ng-isolate-scope" md-component-id="rightmessages" tabindex="-1">
     <div class="ng-scope"><md-toolbar class="md-primary ng-scope md-default-theme">
@@ -1008,8 +855,11 @@
 
 <!-- Theme main app compiled with grunt (replace with below scripts if not using grunt) -->
 <script id="app_js" type="text/javascript" src="../dist/js/app.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
 
+<script src="https://maps.googleapis.com/maps/api/js" type="text/javascript"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/common.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/util.js"></script>
+<script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/1a/stats.js"></script>
 <!-- Replace main.js with all of these if not using grunt to compile -->
 <!--<script src="bower_components/bootstrap/../dist/js/bootstrap.min.js"></script>
 <script src="scripts/gmap.js"></script>-->
