@@ -171,3 +171,28 @@ md-bottom-sheet.md-list md-list-item {    color: rgba(0,0,0,0.87);}md-bottom-she
 	width: 371px;
     max-height: 285px;
 }
+.panel1-body {
+    position: relative;
+	padding:20px;
+	border-color:green;
+}
+.panel1-body > div{
+	display:block;
+	color:red;
+}
+.panel-heading {
+    padding: 15px 20px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+	    color: #333;
+    background-color: #fcfcfc;
+    border-color: #ddd;
+}
+ table thead td{
+	 padding: 8px !important;
+ }
+ 
+ .half div{
+	 padding: 12% 32px 0px 52px;
+ }
